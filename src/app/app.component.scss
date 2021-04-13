@@ -1,0 +1,65 @@
+/*Mes font family*/
+$font: "Lato", sans-serif;
+$font-titre: "Lato", sans-serif;
+/*Mes couleurs*/
+$primary-color: #997e4c;
+$secondary-color: #231f20;
+$tertiary-color: #b2b2b2;
+$bg-color: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*responsive*/
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+body {
+  cursor: pointer;
+  background-color: $bg-color;
+}
+
+.imgLogo1 {
+  margin: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  .endPage {
+    color: $secondary-color;
+    font-family: $font;
+    font-size: 14px;
+    position: absolute;
+    bottom: 15px;
+  }
+}

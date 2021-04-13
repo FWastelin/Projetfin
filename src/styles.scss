@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@use "variables" as *;
+@import "app/components/shared/nav/nav.component.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: pointer;
+  background-color: $bg-color;
+}

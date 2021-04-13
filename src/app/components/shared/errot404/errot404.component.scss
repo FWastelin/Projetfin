@@ -1,0 +1,16 @@
+/*Mes font family*/
+$font: "Lato", sans-serif;
+$font-titre: "Lato", sans-serif;
+/*Mes couleurs*/
+$primary-color: #997e4c;
+$secondary-color: #231f20;
+$tertiary-color: #b2b2b2;
+$bg-color: #ffffff;
+
+.error {
+  text-align: center;
+  color: $secondary-color;
+  font-family: $font-titre;
+  font-size: 30px;
+  margin-top: 100px;
+}

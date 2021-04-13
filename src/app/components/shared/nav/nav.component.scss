@@ -1,0 +1,33 @@
+/*Mes font family*/
+$font: "Lato", sans-serif;
+$font-titre: "Lato", sans-serif;
+/*Mes couleurs*/
+$primary-color: #997e4c;
+$secondary-color: #231f20;
+$tertiary-color: #b2b2b2;
+$bg-color: #ffffff;
+
+.navbar {
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  background-color: $primary-color;
+  color: $bg-color;
+  .nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-family: $font;
+    font-size: 24px;
+    li {
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
