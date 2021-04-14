@@ -1,0 +1,55 @@
+@import "./src/styles";
+
+.main-home {
+  display: flex;
+  margin-top: 100px;
+  .bloc-photo {
+    position: relative;
+    width: 50%;
+    display: flex;
+    .photo1 {
+      height: 350px;
+      width: 250px;
+      z-index: 1;
+      margin-top: 320px;
+      margin-left: 20px;
+      background-color: red;
+    }
+    .carroussel {
+      position: absolute;
+      height: 600px;
+      width: 400px;
+      top: 0;
+      left: 170px;
+      background-color: blue;
+    }
+    .photo2 {
+      height: 350px;
+      width: 250px;
+      z-index: 2;
+      margin-top: 150px;
+      margin-left: 240px;
+      background-color: red;
+    }
+  }
+  .bloc-texte {
+    width: 50%;
+    border: black;
+    margin-left: 150px;
+    .titre-home {
+      font-size: $size-titre;
+      font-family: $font-titre;
+      color: $primary-color;
+      margin-top: 140px;
+    }
+    .texte-home {
+      font-size: $size-texte;
+      font-family: $font;
+      color: $secondary-color;
+      width: 500px;
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@
     text-align: center;
     align-items: center;
     font-family: $font;
-    font-size: 24px;
+    font-size: $size-texte;
     li {
       a:hover {
         color: $secondary-color;
