@@ -1,0 +1,45 @@
+@import "./src/styles";
+
+.main-dojo {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  margin-top: 100px;
+  .dojo-left {
+    width: 30%;
+    text-align: end;
+    margin-top: 100px;
+    border: 1px solid blue;
+    p {
+      font-family: $font-titre;
+      color: $secondary-color;
+      font-size: $size-texte;
+      margin-top: 30px;
+    }
+    p:hover {
+      color: $primary-color;
+    }
+  }
+  .dojo-right {
+    width: 70%;
+    border: 1px solid red;
+    .div-img {
+      width: 450px;
+      height: 300px;
+      margin-top: 60px;
+      margin-left: 50px;
+      z-index: 2;
+      border: 1px solid black;
+    }
+    .div-txt {
+      z-index: 1;
+      width: 750px;
+      height: 500px;
+      margin-left: 150px;
+      transform: translateY(-360px);
+      background-color: $tertiary-color;
+    }
+  }
+}
