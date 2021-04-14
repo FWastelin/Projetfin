@@ -46,6 +46,9 @@
         height: 60px;
         margin-top: 20px;
       }
+      .btn-input:hover {
+        color: $secondary-color;
+      }
     }
   }
   .signOut {
@@ -86,6 +89,9 @@
         width: 200px;
         height: 60px;
         margin-top: 20px;
+      }
+      .btn-input:hover {
+        color: $secondary-color;
       }
     }
   }
