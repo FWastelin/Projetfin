@@ -13,7 +13,7 @@
       z-index: 1;
       margin-top: 320px;
       margin-left: 20px;
-      background-color: red;
+      background-color: $primary-color;
     }
     .carroussel {
       position: absolute;
@@ -21,7 +21,7 @@
       width: 400px;
       top: 0;
       left: 170px;
-      background-color: blue;
+      background-color: $tertiary-color;
     }
     .photo2 {
       height: 350px;
@@ -29,7 +29,7 @@
       z-index: 2;
       margin-top: 150px;
       margin-left: 240px;
-      background-color: red;
+      background-color: $primary-color;
     }
   }
   .bloc-texte {

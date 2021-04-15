@@ -5,13 +5,11 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
   margin-top: 100px;
   .dojo-left {
-    width: 30%;
+    width: 20%;
     text-align: end;
     margin-top: 100px;
-    border: 1px solid blue;
     p {
       font-family: $font-titre;
       color: $secondary-color;
@@ -23,23 +21,40 @@
     }
   }
   .dojo-right {
-    width: 70%;
-    border: 1px solid red;
+    width: 80%;
+    transform: translateY(-300px);
     .div-img {
-      width: 450px;
+      width: 350px;
       height: 300px;
-      margin-top: 60px;
       margin-left: 50px;
-      z-index: 2;
-      border: 1px solid black;
+      z-index: 1;
+      transform: translateY(400px);
+      background-color: $secondary-color;
     }
     .div-txt {
-      z-index: 1;
-      width: 750px;
+      z-index: 2;
+      width: 1000px;
       height: 500px;
       margin-left: 150px;
-      transform: translateY(-360px);
       background-color: $tertiary-color;
+      .titre-div-text {
+        font-family: $font-titre;
+        font-size: $size-titre;
+        color: $primary-color;
+        margin-left: 300px;
+        padding-top: 100px;
+      }
+      .texte-div {
+        font-family: $font;
+        font-size: $size-texte;
+        color: $secondary-color;
+        margin-left: 300px;
+        padding-top: 20px;
+        width: 600px;
+        p {
+          padding-top: 10px;
+        }
+      }
     }
   }
 }
