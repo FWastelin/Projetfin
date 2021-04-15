@@ -6,8 +6,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   cursor: pointer;
   background-color: $bg-color;
+}
+/*responsive*/
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
 }

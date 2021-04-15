@@ -1,0 +1,56 @@
+@import "./src/styles";
+
+.main-contact {
+  width: 1400px;
+  height: 700px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  .map {
+    border: 1px solid black;
+    width: 1000px;
+    height: 700px;
+    z-index: 1;
+  }
+  .adresse {
+    width: 500px;
+    height: 500px;
+    background-color: $primary-color;
+    margin-top: 100px;
+    z-index: 2;
+    transform: translatex(-50px);
+    .imgLogoBlanc {
+      margin-top: 80px;
+      margin-left: 90px;
+    }
+    .txt-adresse {
+      display: flex;
+      margin-left: 90px;
+      margin-top: 40px;
+      .left {
+        p {
+          font-family: $font-titre;
+          font-size: $size-texte;
+          color: $bg-color;
+          margin-top: 30px;
+        }
+      }
+      .right {
+        font-family: $font;
+        font-size: $size-texte;
+        color: $bg-color;
+        margin-left: 20px;
+        .rue {
+          margin-top: 30px;
+        }
+        .tel {
+          margin-top: 10px;
+        }
+        .mail {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
