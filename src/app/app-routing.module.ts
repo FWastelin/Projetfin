@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AgendaComponent } from './components/pages/agenda/agenda.component';
+import { ClientComponent } from './components/pages/client/client.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { DojoComponent } from './components/pages/dojo/dojo.component';
 import { HomeComponent } from './components/pages/home/home.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'agenda', component : AgendaComponent},
   {path: 'contact', component : ContactComponent},
   {path: 'dojo', component : DojoComponent},
+  {path: 'client', component : ClientComponent},
 
   {path:'notfound', component : Errot404Component},
   {path : '**', redirectTo:'/notfound'}//si on rentre n'importe quoi =**, alors 404

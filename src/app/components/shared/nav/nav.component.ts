@@ -26,4 +26,7 @@ export class NavComponent implements OnInit {
   toContact(){
     this._router.navigate(['contact']);
   }
+  toClient(){
+    this._router.navigate(['client']);
+  }
 }
