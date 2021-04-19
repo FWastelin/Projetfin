@@ -10,13 +10,17 @@
     width: 20%;
     text-align: end;
     margin-top: 100px;
-    p {
+    button {
       font-family: $font-titre;
       color: $secondary-color;
       font-size: $size-texte;
+      background-color: $bg-color;
       margin-top: 30px;
+      border: none;
+      display: inline;
+      text-align: end;
     }
-    p:hover {
+    button:hover {
       color: $primary-color;
     }
   }
