@@ -11,5 +11,11 @@ export class DojoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  /*app.controller('myCtrl', function($scope) {
+    $scope.showMe = false;
+    $scope.functionTxt = function() {
+      $scope.showMe = !$scope.showMe;
+    }
+  }*/
 
 }

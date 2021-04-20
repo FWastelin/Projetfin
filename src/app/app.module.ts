@@ -11,6 +11,8 @@ import { DojoComponent } from './components/pages/dojo/dojo.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ClientComponent } from './components/pages/client/client.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,10 @@ import { ClientComponent } from './components/pages/client/client.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
