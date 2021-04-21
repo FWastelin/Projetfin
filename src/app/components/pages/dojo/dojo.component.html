@@ -1,13 +1,17 @@
-<main class="main-dojo" ng-app="myApp" ng-controller="myCtrl">
+<main class="main-dojo">
   <section class="dojo-left">
-    <button ng-click="functionTxt()" value="prof">Le professeur</button><br />
-    <button ng-click="functionTxt()" value="dojo">Le dojo</button><br />
-    <button ng-click="functionTxt()" value="assistant">Les assistants</button>
+    <button (click)="eventShowProf()" value="prof">Le professeur</button><br />
+    <button (click)="eventShowDojo()" value="dojo">Le dojo</button><br />
+    <button (click)="eventShowAssistant()" value="assistant">
+      Les assistants
+    </button>
   </section>
   <section class="dojo-right">
-    <div class="div-img"></div>
-    <div class="div-txt" ng-show="showMe">
-      <div ng-switch-when="prof">
+    <div class="div-img">
+      <div class="photo5"></div>
+    </div>
+    <div class="div-txt">
+      <div *ngIf="showProf">
         <h1 class="titre-div-text">Le professeur</h1>
         <article class="texte-div">
           <p>
@@ -24,7 +28,7 @@
           </p>
         </article>
       </div>
-      <div ng-switch-when="dojo">
+      <div *ngIf="showDojo">
         <h1 class="titre-div-text">Le dojo</h1>
         <article class="texte-div">
           <p>
@@ -41,7 +45,7 @@
           </p>
         </article>
       </div>
-      <div ng-switch-when="assistant">
+      <div *ngIf="showAssistant">
         <h1 class="titre-div-text">Les assistants</h1>
         <article class="texte-div">
           <p>

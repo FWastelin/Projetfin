@@ -8,7 +8,6 @@
   margin-right: auto;
   display: flex;
   .map {
-    border: 1px solid black;
     width: 1000px;
     height: 700px;
     z-index: 1;
@@ -22,11 +21,11 @@
     transform: translatex(-50px);
     .imgLogoBlanc {
       margin-top: 80px;
-      margin-left: 90px;
+      margin-left: 60px;
     }
     .txt-adresse {
       display: flex;
-      margin-left: 90px;
+      margin-left: 60px;
       margin-top: 40px;
       .left {
         p {
