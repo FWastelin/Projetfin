@@ -12,6 +12,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { ClientComponent } from './components/pages/client/client.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AgendaComponent,
     DojoComponent,
     ContactComponent,
-    ClientComponent
+    ClientComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

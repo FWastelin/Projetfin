@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Projetfin';
+  public slides = [
+    { src:"/../assets/img/aikido1.jpg" },
+    { src:"/../assets/img/aikido2.jpg" },
+    { src:"/../assets/img/aikido4.jpg" }
+  ];
 }
