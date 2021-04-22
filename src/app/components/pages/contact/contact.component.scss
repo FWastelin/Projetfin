@@ -14,18 +14,18 @@
   }
   .adresse {
     width: 500px;
-    height: 500px;
+    height: 480px;
     background-color: $primary-color;
     margin-top: 100px;
     z-index: 2;
     transform: translatex(-50px);
     .imgLogoBlanc {
       margin-top: 80px;
-      margin-left: 60px;
+      margin-left: 50px;
     }
     .txt-adresse {
       display: flex;
-      margin-left: 60px;
+      margin-left: 50px;
       margin-top: 40px;
       .left {
         p {
