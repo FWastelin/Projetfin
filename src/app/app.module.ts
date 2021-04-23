@@ -10,9 +10,9 @@ import { AgendaComponent } from './components/pages/agenda/agenda.component';
 import { DojoComponent } from './components/pages/dojo/dojo.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ClientComponent } from './components/pages/client/client.component';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -30,7 +30,9 @@ import { CarouselComponent } from './carousel/carousel.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],
