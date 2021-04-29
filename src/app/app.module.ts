@@ -13,6 +13,10 @@ import { ClientComponent } from './components/pages/client/client.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { CoursService } from './services/cours.service';
+import { ReservationService } from './services/reservation.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -32,10 +36,17 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [
+    CoursService,
+    ReservationService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

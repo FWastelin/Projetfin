@@ -71,3 +71,81 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .main-dojo {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    .dojo-left {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      button {
+        font-family: $font-titre;
+        color: $secondary-color;
+        font-size: $size-texte;
+        background-color: $bg-color;
+        margin-top: 30px;
+        border: none;
+        outline: none; // pour enlever le contour en évidence
+        display: inline;
+        text-align: end;
+      }
+      button:hover {
+        color: $primary-color;
+        border: transparent;
+      }
+    }
+    .dojo-right {
+      width: 80%;
+      transform: translateY(-300px);
+      .div-img {
+        width: 350px;
+        height: 300px;
+        margin-left: 50px;
+        z-index: 1;
+        transform: translateY(400px);
+        background-color: $secondary-color;
+        .photo5 {
+          background-image: url("/../assets/img/aikido5.jpg");
+          background-size: cover;
+          background-position: center center;
+          width: 350px;
+          height: 300px;
+        }
+      }
+      .div-txt {
+        z-index: 2;
+        width: 1000px;
+        height: 500px;
+        margin-left: 150px;
+        background-color: $tertiary-color;
+        .titre-div-text {
+          font-family: $font-titre;
+          font-size: $size-titre;
+          color: $primary-color;
+          margin-left: 300px;
+          padding-top: 100px;
+        }
+        .texte-div {
+          font-family: $font;
+          font-size: $size-texte;
+          color: $secondary-color;
+          margin-left: 300px;
+          padding-top: 20px;
+          width: 600px;
+          p {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+}

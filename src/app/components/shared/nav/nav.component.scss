@@ -24,3 +24,55 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: $primary-color;
+    color: $bg-color;
+    .nav {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      align-items: center;
+      font-family: $font;
+      font-size: $size-texte;
+      li {
+        a:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar {
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: $primary-color;
+    color: $bg-color;
+    .nav {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      align-items: center;
+      font-family: $font;
+      font-size: $size-textePetit;
+      li {
+        a:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

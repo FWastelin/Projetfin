@@ -4,7 +4,7 @@
     <div class="photo-left">
       <div class="photo3"></div>
     </div>
-    <form method="POST" class="form-signIn">
+    <form (ngSubmit)="onSubmit()" method="POST" class="form-signIn">
       <label for="email" class="label">Email</label><br />
       <input type="email" name="email" id="email" class="input" /><br /><br />
       <label for="psw" class="label">Mot de passe</label>
@@ -22,7 +22,7 @@
     <div class="photo-right">
       <div class="photo6"></div>
     </div>
-    <form method="POST" class="form-signOut">
+    <form (ngSubmit)="onSubmit()" method="POST" class="form-signOut">
       <label for="prenom" class="label">Prénom</label><br />
       <input type="text" name="prenom" id="prenom" class="input" /><br /><br />
       <label for="nom" class="label">Nom</label><br />
