@@ -4,23 +4,28 @@
     <div class="div-reservation">
       <div class="content-reservation">
         <p class="j1">Mardi 1 juillet</p>
-        <button>reserver</button><button>supprimer</button>
+        <button (click)="decrease()">reserver</button
+        ><button (click)="increase()">supprimer</button>
       </div>
       <div class="content-reservation">
         <p class="j2">Vendredi 5 juillet</p>
-        <button>reserver</button><button>supprimer</button>
+        <button (click)="decrease()">reserver</button
+        ><button (click)="increase()">supprimer</button>
       </div>
       <div class="content-reservation">
         <p class="j3">Mardi 10 juillet</p>
-        <button>reserver</button><button>supprimer</button>
+        <button (click)="decrease()">reserver</button
+        ><button (click)="increase()">supprimer</button>
       </div>
       <div class="content-reservation">
         <p class="j4">Vendredi 15 juillet</p>
-        <button>reserver</button><button>supprimer</button>
+        <button (click)="decrease()">reserver</button
+        ><button (click)="increase()">supprimer</button>
       </div>
       <div class="content-reservation">
         <p class="j5">Mardi 19 juillet</p>
-        <button>reserver</button><button>supprimer</button>
+        <button (click)="decrease()">reserver</button
+        ><button (click)="increase()">supprimer</button>
       </div>
     </div>
   </section>
@@ -35,7 +40,7 @@
         <p class="a20">20 cours</p>
         <button>acheter</button><button>supprimer</button>
       </div>
-      <p class="total">Total de mes cours:</p>
+      <p class="total">Total de mes cours: {{ nombre }}</p>
     </div>
   </section>
 </main>

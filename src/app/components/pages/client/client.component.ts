@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./client.component.scss']
 })
 export class ClientComponent implements OnInit {
+  nombre : number = 10;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  increase(){
+    this.nombre++
+  }
+  decrease(){
+    this.nombre--
   }
 
 }
