@@ -25,7 +25,7 @@ export class AgendaComponent implements OnInit {
     this.fg = this._builder.group({
       prenom : ['', Validators.required],
       nom : ['', Validators.required],
-      email : ['', Validators.required],
+      email : ['', Validators.required, Validators.email],
       password : ['', Validators.required],
     })
     this._userService.getAll().subscribe(users => this.users = users)

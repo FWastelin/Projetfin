@@ -1,7 +1,7 @@
 @import "./src/styles";
 
 .main-client {
-  width: 1000px;
+  width: 1300px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -11,21 +11,38 @@
     width: 50%;
     .titre-reservation {
       font-family: $font-titre;
-      font-size: $size-texte;
+      font-size: $size-titre;
       color: $primary-color;
       text-align: center;
     }
     .div-reservation {
-      width: 400px;
-      height: 300px;
+      width: 550px;
+      height: 350px;
       margin-top: 30px;
       margin-left: 50px;
       border: 2px solid $tertiary-color;
-      p {
-        font-family: $font;
-        font-size: $size-texte;
-        color: $secondary-color;
-        padding: 10px;
+      .content-reservation {
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        p {
+          width: 50%;
+          font-family: $font;
+          font-size: $size-texte;
+          color: $secondary-color;
+          padding: 10px;
+        }
+        button {
+          width: 50%;
+          justify-content: end;
+          font-family: $font;
+          font-size: $size-texte;
+          background-color: $primary-color;
+          color: $bg-color;
+          border: none;
+          padding: 5px;
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -33,16 +50,38 @@
     width: 50%;
     .titre-achat {
       font-family: $font-titre;
-      font-size: $size-texte;
+      font-size: $size-titre;
       color: $primary-color;
       text-align: center;
     }
     .div-achat {
-      width: 400px;
-      height: 300px;
+      width: 550px;
+      height: 350px;
       margin-top: 30px;
       margin-left: 50px;
       border: 2px solid $tertiary-color;
+      .content-achat {
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        p {
+          font-family: $font;
+          font-size: $size-texte;
+          color: $secondary-color;
+          padding: 10px;
+        }
+        button {
+          width: 40%;
+          justify-content: end;
+          font-family: $font;
+          font-size: $size-texte;
+          background-color: $primary-color;
+          color: $bg-color;
+          border: none;
+          padding: 5px;
+          margin-right: 5px;
+        }
+      }
       p {
         font-family: $font;
         font-size: $size-texte;
