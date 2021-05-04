@@ -3,7 +3,7 @@
     <button (click)="eventShowProf()" value="prof">Le professeur</button><br />
     <button (click)="eventShowDojo()" value="dojo">Le dojo</button><br />
     <button (click)="eventShowAssistant()" value="assistant">
-      Les assistants
+      L'aïkido: c'est quoi?
     </button>
   </section>
   <section class="dojo-right">
@@ -14,6 +14,7 @@
       <div *ngIf="showProf">
         <h1 class="titre-div-text">Le professeur</h1>
         <article class="texte-div">
+          <p>6è dan de l'Aikikaï de Tokyo, shidoin et dojocho</p>
           <p>
             Le professeur ipsum dolor sit amet consectetur adipisicing elit.
             Numquam saepe ullam asperiores fugiat distinctio amet quasi
@@ -25,6 +26,10 @@
             saepe ullam asperiores fugiat distinctio amet quasi doloribus.
             Placeat repudiandae maxime tenetur magnam, sed modi labore aliquam
             vel minima quidem debitis?
+          </p>
+          <p>
+            En janvier 2018, sur recommandation de Dany Leclerre Shihan, je suis
+            élevé au rang de 6ème dan Aikikaï par le Hombu dojo de Tokyo.
           </p>
         </article>
       </div>
@@ -47,19 +52,42 @@
         </article>
       </div>
       <div *ngIf="showAssistant">
-        <h1 class="titre-div-text">Les assistants</h1>
+        <h1 class="titre-div-text">L'aïkido</h1>
         <article class="texte-div">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            saepe ullam asperiores fugiat distinctio amet quasi doloribus.
+            Aïkido signifie Voie de l'harmonie avec les lois de la nature et
+            avec tous les êtres. Il est la synthèse et la quintessence de tous
+            les arts martiaux pratiqués par les samouraïs depuis plusieurs
+            siècles.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            saepe ullam asperiores fugiat distinctio amet quasi doloribus.
+            C'est aussi l'art de se défendre à mains nues contre un ou plusieurs
+            adversaires en cherchant à les neutraliser sans les blesser.
+            Pratique de self-défense autant que philisophie de vie, cette
+            technique apporte non seulement un bien être physique et mental quel
+            que soit l'âge ou le sexe mais constitue aussi une méthode de
+            défense efficace.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            saepe ullam asperiores fugiat distinctio amet quasi doloribus.
+            L'Aïkido consiste principalement à créer un déséquilibre chez
+            l'adversaire en provoquant un effet centrifuge: par des mouvements
+            circulaires venant des hanches, on dévie les forces et la direction
+            de l'attaquant en l'entraînant dans un mouvement sphérique. Emporté
+            par ces mouvements tournants, l'attaquant perd l'équilibre et est
+            mis hors de combat par des techniques de leviers ou de clés que l'on
+            impose aux articulations principales.
+          </p>
+          <p>
+            Il y a maintenant plus de trente ans que l'Aïkido a été introduit à
+            l'étranger. Il s'est développé en Europe, en Asie, en Afrique, dans
+            les différents pays de l'Est et en Amérique.
+          </p>
+          <p>
+            Plus de 2.000.000 de personnes pratiquent cet art dans le monde. Sa
+            popularité croissante réside dans l'essence même de cet art qui
+            s'appuie sur la culture traditionelle japonaise, sur l'accent mis
+            entre l'harmonie de l'homme avec la nature, et sur le fait que la
+            compétition est absente.
           </p>
         </article>
       </div>
