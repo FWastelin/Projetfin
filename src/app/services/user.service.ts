@@ -29,6 +29,11 @@ export class UserService {
   getById(id : number) : Observable<User[]>{
     return this._client.get<User[]>(`${environment.apiUrl}/user/${id}`);
   }
+
+  login(email : string, password : string){
+    return this._client.post<any>(`${environment.apiUrl}/user`, {email, password})
+  }
+
   update(id : number, user: newUser){
     return this._client.put(`${environment.apiUrl}/user/${id}`, user);
   }

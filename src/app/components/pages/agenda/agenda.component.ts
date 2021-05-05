@@ -12,6 +12,7 @@ import { UserService } from 'src/app/services/user.service';
 export class AgendaComponent implements OnInit {
 
   fg : FormGroup;
+  fgIdentify : FormGroup
   users : User[] = [];
   user : User;
   id : number;
@@ -24,13 +25,14 @@ export class AgendaComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.identifyForm();
     this.fg = this._builder.group({
       prenom : ['', [Validators.required]],
       nom : ['', [Validators.required]],
       email : ['', [Validators.required, Validators.email]],
       password : ['', [Validators.required]]
     });
+
+    this.fgIdentify = this._builder.group({email : ['', [Validators.required, Validators.email]],password : ['', [Validators.required]]});
   
   }
   onSubmit(){
@@ -46,9 +48,11 @@ export class AgendaComponent implements OnInit {
     })
   }
   identifyForm(){
-    this.id = this._route.snapshot.params['id'];
-    this.fg = this._builder.group({email : ['', [Validators.required, Validators.email]],password : ['', [Validators.required]]});
-    this._userService.getById(this.id).subscribe(data => this.users = data);
+    if(this.fgIdentify.invalid){
+      return;
+    }
+    this._userService.login(this.fgIdentify.value.email, this.fgIdentify.value.password).subscribe(data => this.users = data)
+    this._router.navigate(['/client'])
   }
 
 }
