@@ -27,6 +27,9 @@
         <button (click)="decrease()">reserver</button
         ><button (click)="increase()">supprimer</button>
       </div>
+      <p *ngFor="let reservation of reservations">
+        Vos réservations:<span>{{ reservation.reservation }}</span>
+      </p>
     </div>
   </section>
   <section class="achat">

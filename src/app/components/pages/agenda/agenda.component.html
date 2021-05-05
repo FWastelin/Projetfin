@@ -6,15 +6,22 @@
     </div>
     <form
       [formGroup]="fg"
-      (ngSubmit)="onSubmit()"
+      (ngSubmit)="identifyForm()"
       method="POST"
       class="form-signIn"
     >
       <label for="email" class="label">Email</label><br />
-      <input type="email" name="email" id="email" class="input" /><br /><br />
+      <input
+        formControlName="email"
+        type="email"
+        name="email"
+        id="email"
+        class="input"
+      /><br /><br />
       <label for="psw" class="label">Mot de passe</label>
       <input
         type="password"
+        formControlName="password"
         name="password"
         id="password"
         class="input"
