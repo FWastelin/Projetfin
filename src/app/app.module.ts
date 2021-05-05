@@ -18,6 +18,7 @@ import { ReservationService } from './services/reservation.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/user.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,9 @@ import { UserService } from './services/user.service';
   providers: [
     CoursService,
     ReservationService,
-    UserService
+    UserService,
+
+    
   ],
   bootstrap: [AppComponent]
 })

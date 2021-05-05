@@ -23,12 +23,12 @@ export class AgendaComponent implements OnInit {
 
   ngOnInit(): void {
     this.fg = this._builder.group({
-      prenom : ['', Validators.required],
-      nom : ['', Validators.required],
-      email : ['', Validators.required, Validators.email],
-      password : ['', Validators.required],
+      prenom : ['', [Validators.required]],
+      nom : ['', [Validators.required]],
+      email : ['', [Validators.required, Validators.email]],
+      password : ['', [Validators.required]]
     })
-    this._userService.getAll().subscribe(users => this.users = users)
+    
   }
   onSubmit(){
     if(this.fg.invalid){
@@ -36,7 +36,7 @@ export class AgendaComponent implements OnInit {
     }
     this._userService.add(this.fg.value).subscribe({
       next : () => {
-        this._userService.getAll().subscribe(users => this.users = users)
+        
         this._router.navigate(['/client'])
       }
     })

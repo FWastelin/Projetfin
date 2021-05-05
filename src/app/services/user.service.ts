@@ -13,13 +13,15 @@ import { newUser } from '../models/user/newUser.model';
 export class UserService {
 
   constructor(
-    private _client : HttpClient
+    private _client : HttpClient,
+    //private _authService : AuthService,
   ) { }
   getAll() : Observable<User[]>{
     return this._client.get<User[]>(`${environment.apiUrl}/user`);
   }
-  add(id : User){
-    return this._client.post(`${environment.apiUrl}/user`, User);
+  add(user : User){
+    console.log(user)
+    return this._client.post(`${environment.apiUrl}/user`, user);
   }
   delete(id : number){
     return this._client.delete(`${environment.apiUrl}/user/${id}`);

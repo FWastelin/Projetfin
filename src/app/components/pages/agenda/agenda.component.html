@@ -34,19 +34,38 @@
       class="form-signOut"
     >
       <label for="prenom" class="label">Prénom</label><br />
-      <input type="text" name="prenom" id="prenom" class="input" /><br /><br />
+      <input
+        type="text"
+        formControlName="prenom"
+        name="prenom"
+        id="prenom"
+        class="input"
+      /><br /><br />
       <label for="nom" class="label">Nom</label><br />
-      <input type="text" name="nom" id="nom" class="input" /><br /><br />
+      <input
+        type="text"
+        formControlName="nom"
+        name="nom"
+        id="nom"
+        class="input"
+      /><br /><br />
       <label for="email" class="label">Email</label><br />
-      <input type="email" name="email" id="email" class="input" /><br /><br />
+      <input
+        type="email"
+        formControlName="email"
+        name="email"
+        id="email"
+        class="input"
+      /><br /><br />
       <label for="psw" class="label">Mot de passe</label><br />
       <input
         type="password"
         name="password"
         id="password"
         class="input"
+        formControlName="password"
       /><br />
-      <input type="submit" value="Envoyer" class="btn-input" />
+      <button value="Envoyer" class="btn-input">Envoyer</button>
     </form>
   </section>
 </main>
